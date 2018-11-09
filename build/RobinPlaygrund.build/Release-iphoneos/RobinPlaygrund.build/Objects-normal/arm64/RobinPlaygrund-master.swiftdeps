@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.2 (swiftlang-1000.11.37.1 clang-1000.11.45.1)"
+options: "f4966743dd8bb29753e494a8fd4dd3fa"
+build_time: [1540983117, 417406000]
+inputs:
+  "/Users/robin.guo/Desktop/RobinPlaygrund/RobinPlaygrund/Object+Classinfo.swift": [1540365106, 0]
+  "/Users/robin.guo/Desktop/RobinPlaygrund/RobinPlaygrund/TestPlayground.swift": [1540786296, 0]

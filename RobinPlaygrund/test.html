@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head lang="zh-cmn-Hans">
+        <meta charset="UTF-8">
+            <title>DWebviewJavaScriptBridge Test</title>
+            <meta name="renderer" content="webkit">
+                <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+                    <meta name="viewport" content="width=device-width,initial-scale=0.5,user-scalable=no"/>
+                    <script>
+                        
+                    var bridge = getJsBridge();
+                    console.log(bridge)
+                    
+                    function bridgeFunction(funcName){
+                        bridge.call(funcName, {}, function (v) {
+                                        alert(v)
+                                        });
+                
+                    }
+                    
+                    function creatdiv(data){
+                        for(var i = 0; i<data.length; i++){
+                                
+                            var div = document.createElement('div');
+                            div.innerHTML = "<div class=\"btn\" onclick= \"bridgeFunction('" +data[i]+"')\">" + data[i] + "</div>";
+                            var bo = document.body;
+                            bo.appendChild(div)
+                        }
+                    }
+
+                    
+                    function callNoArgAsyn() {
+                        bridge.call("testNoArgAsyn", function (v) {
+                                    alert(v)
+                                    });
+                    }
+                    
+                    function callNoArgAsyn1() {
+                        bridge.call("selectContact", {},  function (v) {
+                                    alert(v)
+                                    })
+                    }
+                    </script>
+    </head>
+    <style>
+        .btn {
+            text-align: center;
+            background: dodgerblue;
+            color: white;
+            padding: 20px;
+            margin: 30px;
+            font-size: 24px;
+            border-radius: 4px;
+            box-shadow: 4px 2px 10px #999;
+        }
+    
+    .btn:active {
+        opacity: .7;
+        box-shadow: 4px 2px 10px #555;
+    }
+    
+        </style>
+    <body>
+        <div class="btn" onclick="callNoArgAsyn()">无参函数异步调用</div>
+        <div class="btn" onclick="callNoArgAsyn1()">selectContact</div>
+        <div class="btn" onclick="alert(confirm('Press a button'))">confirm test</div>
+        <div class="btn" onclick="alert(prompt('Please input user name.','wendu'))">prompt test</div>
+    </body>
+</html>

@@ -4,26 +4,29 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>RobinPlaygrund copy.xcscheme</key>
+		<key>Pods-RobinPlaygrund.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>Pods-RobinPlaygrund_Dev.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>RobinPlaygrund.xcscheme</key>
+		<key>SwiftyJSON.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>RobinPlaygrund_Dev.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
-		<key>Test.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>2</integer>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
 </dict>
 </plist>

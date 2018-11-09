@@ -1,0 +1,6 @@
+module Pods_RobinPlaygrund {
+  umbrella header "Pods-RobinPlaygrund-umbrella.h"
+
+  export *
+  module * { export * }
+}
